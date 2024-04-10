@@ -10,8 +10,8 @@ The purpose of this analysis is to create a binary classification model using de
 ### Data Preprocessing:
 
 - **Target Variable:** The target variable for our model is "IS_SUCCESSFUL", which indicates whether the funding provided by Alphabet Soup was used effectively.
-- **Feature Variables:** The features for our model include various metadata columns such as application type, affiliation, organization classification, use case for funding, income classification, funding amount requested, and other relevant attributes.
-- **Variables to be Removed:** The EIN and NAME columns were removed from the input data as they are identification columns and not relevant for model prediction.
+- **Feature Variables:** The features for our model include various metadata columns such as 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', and 'ASK_AMT'.
+- **Variables to be Removed:** The 'EIN' and 'NAME' columns were removed from the input data as they are identification columns and not relevant for model prediction.
 
 ### Compiling, Training, and Evaluating the Model:
 
