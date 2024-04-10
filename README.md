@@ -37,10 +37,13 @@ Various optimization techniques were employed to improve model performance, incl
   ![Optimization 3](images/new-activation-function.png)
 - adding more neurons, and
   ![Optimization 4](images/adding-more-neurons.png)
-- adjusting the number of epochs during training (Ex: 100 to 200, then to 75, finally deciding on 50).
+- adjusting the number of epochs and batch_size during training. Example: Started epochs initial value from 100, then 200, then to 75 and so on, finally deciding on 50. Similarly, the batch size by default was 807 which was taking longer to execute and also not giving much accuracy. Hence, tried and tested a lot of values before settling on 250.
   ![Optimization 5](images/epochs-size-reduce.png)
 
 ### Summary:
 The overall results of the deep learning model indicate that while I was able to achieve reasonable accuracy, there is still room for improvement to meet the target performance of over 75%. Despite employing various optimization techniques, including adjusting input data and tweaking model architecture, I was not able to achieve the desired performance level.
 
 A different approach to solving this classification problem could involve exploring advanced deep learning architectures (e.g., convolutional neural networks, recurrent neural networks). More complex neural network architectures may capture intricate patterns in the data more effectively.
+
+
+NOTE: I have left all the modifications done in the optimization as is so that each major modification I have done can be seen right there. Added the HDF5 files to a folder for better clarity. Since I have worked on colab, all the files needed to be downloaded and put in a folder structure manually. Created a callback that saves the model's weights every five epochs as per the instructions.
